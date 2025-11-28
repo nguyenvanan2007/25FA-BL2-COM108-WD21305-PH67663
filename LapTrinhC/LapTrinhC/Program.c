@@ -96,7 +96,7 @@ int main()
 		printf("\n");
 		printf("1. Kiem Tra So Nguyen");
 		printf("\n");
-		printf("2. Tinh Trung Binh Tong Cac So Chia Het Cho 3 Trong Mang");
+		printf("2. Tinh TBC Cac So Chia Het Cho 3 Trong Mang");
 		printf("\n");
 		printf("3. TEN chuc nang 3");
 		printf("\n");
