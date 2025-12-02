@@ -1,4 +1,7 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <stdlib.h>
+
 
 void kiemTraSoNguyen()
 {
@@ -6,7 +9,7 @@ void kiemTraSoNguyen()
 	printf("\n");
 }
 
-void sapXepPhanTu()
+void sapXepPhanTu() 
 {
 	int integerArray[100];
 	int tmp;
@@ -38,6 +41,28 @@ void sapXepPhanTu()
 
 }
 
+void demoMangHaiChieu()
+{
+	int array[2][3];
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			printf("mang[%d][%d] = ", i, j);
+			scanf("%d", &array[i][j]);
+		}
+	}
+
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			printf("%d, ", array[i][j]);
+		}
+		printf("\n");
+	}
+}
+
 void lapChucNang(int chonChucNang)
 {
 	int tiepTuc = 1;
@@ -52,7 +77,7 @@ void lapChucNang(int chonChucNang)
 			sapXepPhanTu();
 			break;
 		case 3:
-			// ham goi chuc nang 3
+			demoMangHaiChieu();
 			break;
 		default:
 			printf("Chon sai. Chuc nang hop le [0-3]");
@@ -65,6 +90,7 @@ void lapChucNang(int chonChucNang)
 	}
 
 }
+
 
 int main()
 {
