@@ -2,6 +2,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void demoString()
+{
+	char
+		name[50] = "AnhTT184";
+	while (getchar() != '\n');
+	printf("Nhap ten cua ban: ");
+
+	fgets(name, sizeof(name), stdin);
+
+	printf("%s", name);
+	printf("\n");
+
+}  
 
 void kiemTraSoNguyen()
 {
@@ -79,6 +92,12 @@ void lapChucNang(int chonChucNang)
 		case 3:
 			demoMangHaiChieu();
 			break;
+		case 4:
+			
+			break;
+		case 5:
+			
+			break;
 		default:
 			printf("Chon sai. Chuc nang hop le [0-3]");
 			break;
@@ -104,6 +123,10 @@ int main()
 		printf("2. sap Xep Phan Tu");
 		printf("\n");
 		printf("3. TEN chuc nang 3");
+		printf("\n");
+		printf("4. TEN chuc nang 4");
+		printf("\n");
+		printf("5. TEN chuc nang 5");
 		printf("\n");
 		printf("0. Thoat");
 		printf("\n");

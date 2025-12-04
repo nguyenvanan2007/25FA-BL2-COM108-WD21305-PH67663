@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -334,7 +335,7 @@ void xayDungGameFPOLY_LOTT()
 	int x, y;           
 	int count = 0;      
 
-	printf("Nhap so may man  cua ban thu nhat (1-15): ");
+	printf("Nhap so may man cua ban thu nhat (1-15): ");
 	scanf("%d", &a);
 	printf("Nhap so may man cua ban thu hai (1-15): ");
 	scanf("%d", &b);
@@ -403,7 +404,7 @@ void lapChucNang(int chonChucNang)
 			break;
 
 		default:
-			printf("Chon sai. Chuc nang hop le [0-3]");
+			printf("Chon sai. Chuc nang hop le [0-10]");
 			break;
 		}
 
@@ -419,31 +420,31 @@ int main()
 	int chonChucNang;
 	do
 	{
-		printf("Menu");
+		printf("-----------------------Menu------------------                                             ");
 		printf("\n");
-		printf("1. Kiem Tra So Nguyen");
+		printf("|          1.Kiem Tra So Nguyen             |      **     ****              *                       ");
 		printf("\n");
-		printf("2. Tim Uoc chung Va Boi Chung");
+		printf("|          2.Tim Uoc chung Va Boi Chung     |     *  *   *    *         *   *   *                   ");
 		printf("\n");
-		printf("3. Tinh Tien Quan Karaoke");
+		printf("|          3.Tinh Tien Quan Karaoke         |    *   *   *    *       *    *   *    *                ");
 		printf("\n");
-		printf("4. Tinh Tien Dien");
+		printf("|          4.Tinh Tien Dien                 |        *   *    *        *           *                 ");
 		printf("\n");
-		printf("5. Doi Tien ");
+		printf("|          5.Doi Tien                       |        *   *    *      *   *       *   *               ");
 		printf("\n");
-		printf("6. tinh Lai Vay ");
+		printf("|          6.tinh Lai Vay                   |        *   *    *         *           *                 ");
 		printf("\n");
-		printf("7.vay Tien Mua Xe ");
+		printf("|          7.vay Tien Mua Xe                |     ******  ****         *    *   *    *                ");
 		printf("\n");
-		printf("8.sap Xep TTSV ");
+		printf("|          8.sap Xep TTSV                   |                             *   *   *                   ");
 		printf("\n");
-		printf("9. xayDungGameFPOLY_LOTT");
+     	printf("|          9.xayDungGameFPOLY_LOTT          |                                 *                       ");
 		printf("\n");
-		printf("10. tinh Phan So");
+		printf("|          10.tinh Phan So                  |                                             ");
 		printf("\n");
-		printf("0. Thoat");
+		printf("|          0.Thoat                          |                                             ");
 		printf("\n");
-		printf("Hay chon chuc nang [0-3]: ");
+		printf("----------Hay chon chuc nang [0-3]:----------");
 		scanf("%d", &chonChucNang);
 		lapChucNang(chonChucNang);
 	} while (chonChucNang != 0);
